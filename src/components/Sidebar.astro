@@ -1,0 +1,80 @@
+---
+const { name, email, phone, birth, title } = Astro.props;
+import ContactList from "./ContactList.astro";
+import SocialList from "./SocialList.astro";
+---
+
+<aside class="sidebar" data-sidebar>
+  <div class="sidebar-info">
+    <figure class="avatar-box">
+      <img src="src/images/my-avatar.png" alt="Angga Widiarta" width="80" />
+    </figure>
+
+    <div class="info-content">
+      <h1 class="name" title="I Putu Angga Purnama Widiarta">{name}</h1>
+
+      <p class="title">{title}</p>
+    </div>
+
+    <button class="info_more-btn" data-sidebar-btn>
+      <span>Show Contacts</span>
+
+      <ion-icon name="chevron-down"></ion-icon>
+    </button>
+  </div>
+
+  <div class="sidebar-info_more">
+    <div class="separator"></div>
+
+    <ul class="contacts-list">
+      <ContactList
+        iconName="calendar-outline"
+        contactType="Email"
+        referenceName="anggawidiarta55@gmail.com"
+        href="#"
+      />
+
+      <ContactList
+        iconName="calendar-outline"
+        contactType="Phone"
+        referenceName="+6287765304309"
+        href="#"
+      />
+
+      <li class="contact-item">
+        <div class="icon-box">
+          <ion-icon name="calendar-outline"></ion-icon>
+        </div>
+
+        <div class="contact-info">
+          <p class="contact-title">Birthday</p>
+
+          <time datetime="1982-06-23">April 18, 2000</time>
+        </div>
+      </li>
+
+      <li class="contact-item">
+        <div class="icon-box">
+          <ion-icon name="location-outline"></ion-icon>
+        </div>
+
+        <div class="contact-info">
+          <p class="contact-title">Location</p>
+
+          <address>West Nusa Tenggara, Indonesia</address>
+        </div>
+      </li>
+    </ul>
+
+    <div class="separator"></div>
+
+    <ul class="social-list">
+      <SocialList hrefSocial="#" socialLogo="logo-facebook" />
+      <SocialList hrefSocial="#" socialLogo="logo-twitter" />
+      <SocialList hrefSocial="#" socialLogo="logo-instagram" />
+      <SocialList hrefSocial="#" socialLogo="logo-linkedin" />
+    </ul>
+  </div>
+</aside>
+
+<style></style>
