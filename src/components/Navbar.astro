@@ -1,0 +1,25 @@
+---
+const { about, className } = Astro.props;
+---
+
+<li class="navbar-item">
+  <button class={className} data-nav-link>{about}</button>
+</li>
+
+<style>
+  .navbar-link {
+    color: var(--light-gray);
+    font-size: var(--fs-8);
+    padding: 20px 7px;
+    transition: color var(--transition-1);
+  }
+
+  .navbar-link:hover,
+  .navbar-link:focus {
+    color: var(--light-gray-70);
+  }
+
+  .navbar-link.active {
+    color: var(--orange-yellow-crayola);
+  }
+</style>
