@@ -1,0 +1,9 @@
+---
+const { hrefSocial, socialLogo } = Astro.props;
+---
+
+<li class="social-item">
+  <a href={hrefSocial} class="social-link">
+    <ion-icon name={socialLogo}></ion-icon>
+  </a>
+</li>

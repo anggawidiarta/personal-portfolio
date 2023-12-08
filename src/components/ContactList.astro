@@ -1,0 +1,15 @@
+---
+const { href, referenceName, contactType, iconName } = Astro.props;
+---
+
+<li class="contact-item">
+  <div class="icon-box">
+    <ion-icon name={iconName}></ion-icon>
+  </div>
+
+  <div class="contact-info">
+    <p class="contact-title">{contactType}</p>
+
+    <a href={href} class="contact-link">{referenceName}</a>
+  </div>
+</li>
