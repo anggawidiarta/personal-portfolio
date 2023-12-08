@@ -1,0 +1,17 @@
+---
+const { title, paragraph_1, paragraph_2 } = Astro.props;
+---
+
+<header>
+  <h2 class="h2 article-title">{title}</h2>
+</header>
+
+<section class="about-text">
+  <p>
+    {paragraph_1}
+  </p>
+
+  <p>
+    {paragraph_2}
+  </p>
+</section>

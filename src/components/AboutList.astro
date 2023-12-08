@@ -1,0 +1,17 @@
+---
+const { imgSrc, imgAlt, serviceTitle, serviceDesc } = Astro.props;
+---
+
+<li class="service-item">
+  <div class="service-icon-box">
+    <img src={imgSrc} alt={imgAlt} width="40" />
+  </div>
+
+  <div class="service-content-box">
+    <h4 class="h4 service-item-title">{serviceTitle}</h4>
+
+    <p class="service-item-text">
+      {serviceDesc}
+    </p>
+  </div>
+</li>
