@@ -2,6 +2,7 @@
 const { name, email, phone, birth, title } = Astro.props;
 import ContactList from "./ContactList.astro";
 import SocialList from "./SocialList.astro";
+
 ---
 
 <aside class="sidebar" data-sidebar>
@@ -11,7 +12,7 @@ import SocialList from "./SocialList.astro";
     </figure>
 
     <div class="info-content">
-      <h1 class="name" title="I Putu Angga Purnama Widiarta">{name}</h1>
+      <h1 class="name" title="Angga Widiarta">{name}</h1>
 
       <p class="title">{title}</p>
     </div>
