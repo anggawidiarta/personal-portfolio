@@ -1,0 +1,9 @@
+---
+const { href, imgSrc, imgAlt } = Astro.props;
+---
+
+<li class="clients-item">
+  <a href={href}>
+    <img src={imgSrc} alt={imgAlt} />
+  </a>
+</li>

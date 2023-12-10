@@ -1,0 +1,23 @@
+---
+const { projectName, projectCategory, imgSrc, imgAlt } = Astro.props;
+---
+
+<li
+  class="project-item active"
+  data-filter-item
+  data-category={projectCategory.toLowerCase()}
+>
+  <a href="#">
+    <figure class="project-img">
+      <div class="project-item-icon-box">
+        <ion-icon name="eye-outline"></ion-icon>
+      </div>
+
+      <img src={imgSrc} alt={imgAlt} loading="lazy" />
+    </figure>
+
+    <h3 class="project-title">{projectName}</h3>
+
+    <p class="project-category">{projectCategory}</p>
+  </a>
+</li>

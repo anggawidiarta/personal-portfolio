@@ -1,0 +1,21 @@
+---
+interface Props {
+  title: String;
+  iconName: String;
+}
+const { title, iconName } = Astro.props;
+---
+
+<section class="timeline">
+  <div class="title-wrapper">
+    <div class="icon-box">
+      <ion-icon name={iconName || "book-outline"}></ion-icon>
+    </div>
+
+    <h3 class="h3 font-extrabold">{title}</h3>
+  </div>
+
+  <ol class="timeline-list">
+    <slot />
+  </ol>
+</section>

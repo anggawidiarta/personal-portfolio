@@ -1,0 +1,11 @@
+---
+const { title } = Astro.props;
+---
+
+<section class="skill">
+  <h3 class="h3 skills-title">{title || "My Skills"}</h3>
+
+  <ul class="skills-list content-card">
+    <slot />
+  </ul>
+</section>

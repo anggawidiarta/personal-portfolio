@@ -1,0 +1,14 @@
+---
+const { title, percentage } = Astro.props;
+---
+
+<li class="skills-item">
+  <div class="title-wrapper">
+    <h5 class="h5">{title}</h5>
+    <data value={percentage}>: {percentage}%</data>
+  </div>
+
+  <div class="skill-progress-bg">
+    <div class="skill-progress-fill" style=`width:${percentage}%`></div>
+  </div>
+</li>
