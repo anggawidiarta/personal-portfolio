@@ -1,0 +1,7 @@
+---
+const { title, active } = Astro.props;
+---
+
+<li class="filter-item">
+  <button class={active || ""} data-filter-btn>{title}</button>
+</li>

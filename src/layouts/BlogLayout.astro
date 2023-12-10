@@ -1,0 +1,18 @@
+---
+interface Props {
+  title: String;
+}
+const { title } = Astro.props;
+---
+
+<article class="blog" data-page="blog">
+  <header>
+    <h2 class="h2 article-title">{title}</h2>
+  </header>
+
+  <section class="blog-posts">
+    <ul class="blog-posts-list">
+      <slot />
+    </ul>
+  </section>
+</article>

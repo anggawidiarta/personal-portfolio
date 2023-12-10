@@ -1,0 +1,10 @@
+---
+interface Props {
+  title: String;
+}
+const { title } = Astro.props;
+---
+
+<li class="select-item">
+  <button data-select-item>{title}</button>
+</li>
