@@ -3,7 +3,7 @@ const { imgSrc, imgAlt, category, date, title, desc, href } = Astro.props;
 ---
 
 <li class="blog-post-item">
-  <a href={href}>
+  <a href={href || "#"} target="_blank">
     <figure class="blog-banner-box">
       <img src={imgSrc} alt={imgAlt} loading="lazy" />
     </figure>
