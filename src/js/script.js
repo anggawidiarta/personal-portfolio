@@ -28,6 +28,7 @@ const overlay = document.querySelector("[data-overlay]");
 // Modal elements
 const modalImg = document.querySelector("[data-modal-img]");
 const modalTitle = document.querySelector("[data-modal-title]");
+const modalTime = document.querySelector("[data-modal-datetime]");
 const modalText = document.querySelector("[data-modal-text]");
 
 /**
@@ -51,6 +52,9 @@ for (let i = 0; i < testimonialsItem.length; i++) {
     ).innerHTML;
     modalText.innerHTML = this.querySelector(
       "[data-testimonials-text]"
+    ).innerHTML;
+    modalTime.innerHTML = this.querySelector(
+      "[data-testimonials-time]"
     ).innerHTML;
 
     testimonialsModalFunc();

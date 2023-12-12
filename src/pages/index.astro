@@ -89,7 +89,7 @@ import TimelineLayout from "../layouts/TimelineLayout.astro";
         -->
 
         <section class="testimonials">
-          <h3 class="h3 testimonials-title">Testimonials</h3>
+          <h3 class="h3 testimonials-title" style="color: blue;">Testimonials</h3>
 
           <ul class="testimonials-list has-scrollbar">
             <TestimonialList
@@ -97,6 +97,7 @@ import TimelineLayout from "../layouts/TimelineLayout.astro";
               imgAlt=""
               name="David Beckham"
               desc="Good Man Good asdasdaikjjsdksd"
+              time="18 April 2023"
             />
             <TestimonialList
               imgSrc=""
@@ -147,7 +148,7 @@ import TimelineLayout from "../layouts/TimelineLayout.astro";
             <div class="modal-content">
               <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
 
-              <time datetime="2023-04-18">14 June, 2023</time>
+              <time data-modal-datetime>14 June, 2023</time>
 
               <div data-modal-text>
                 <p>
@@ -193,19 +194,19 @@ import TimelineLayout from "../layouts/TimelineLayout.astro";
 
       <article class="resume" data-page="resume">
         <header>
-          <h2 class="h2 article-title">Resume</h2>
+          <h2 class="h2 article-title font-bold">Resume</h2>
         </header>
 
         <!-- Education Resume -->
         <TimelineLayout title="Education" iconName="">
           <ExperienceList
-            name="Bachelor Of Informatics Engineering"
-            timeline="2018 - 2025"
+            name="Bachelor Of Computer Science"
+            timeline="2018 - 2023"
             desc="University Of Mataram"
           />
           <ExperienceList
-            name="Bachelor Of Informatics Engineering"
-            timeline="2018 - 2025"
+            name="Science Major"
+            timeline="2015 - 2018"
             desc="Senior High School 6 Mataram"
           />
         </TimelineLayout>
@@ -239,16 +240,16 @@ import TimelineLayout from "../layouts/TimelineLayout.astro";
 
       <article class="portfolio" data-page="portfolio">
         <header>
-          <h2 class="h2 article-title">Portfolio</h2>
+          <h2 class="h2 article-title font-bold">Portfolio</h2>
         </header>
 
         <section class="projects">
           <ul class="filter-list">
             <FilterItem title="All" active="active" />
-            <FilterItem title="Web Design" />
             <FilterItem title="Applications" />
             <FilterItem title="Web Development" />
             <FilterItem title="Data Science" />
+            <FilterItem title="Others" />
           </ul>
 
           <div class="filter-select-box">
@@ -259,13 +260,12 @@ import TimelineLayout from "../layouts/TimelineLayout.astro";
                 <ion-icon name="chevron-down"></ion-icon>
               </div>
             </button>
-
             <ul class="select-list">
               <SelectItem title="all" />
-              <SelectItem title="Web Design" />
               <SelectItem title="Applications" />
               <SelectItem title="Web Development" />
               <SelectItem title="Data Science" />
+              <SelectItem title="Others" />
             </ul>
           </div>
 
@@ -273,131 +273,43 @@ import TimelineLayout from "../layouts/TimelineLayout.astro";
 
           <ul class="project-list">
             <ProjectList
-              projectName="Crypto"
-              projectCategory="Data science"
-              imgSrc="src/images/project-2.png"
-              imgAlt="none"
+              projectName="Sentiment Analysis Using XGBoost Method"
+              projectCategory="Data Science"
+              imgSrc="public/images/project-2.png"
+              imgAlt="Analysis Of Community Sentiment On The Policy Of Implementation Of PPKM On Twitter Social Media Using Xgboost Method"
             />
 
-            <li
-              class="project-item active"
-              data-filter-item
-              data-category="web development"
-            >
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img
-                    src="src/images/project-2.png"
-                    alt="orizon"
-                    loading="lazy"
-                  />
-                </figure>
-
-                <h3 class="project-title">Orizon</h3>
-
-                <p class="project-category">Web development</p>
-              </a>
-            </li>
-
-            <li
-              class="project-item active"
-              data-filter-item
-              data-category="applications"
-            >
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img
-                    src="src/images/project-4.png"
-                    alt="brawlhalla"
-                    loading="lazy"
-                  />
-                </figure>
-
-                <h3 class="project-title">Brawlhalla</h3>
-
-                <p class="project-category">Applications</p>
-              </a>
-            </li>
-
-            <li
-              class="project-item active"
-              data-filter-item
-              data-category="web design"
-            >
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img
-                    src="src/images/project-5.png"
-                    alt="dsm."
-                    loading="lazy"
-                  />
-                </figure>
-
-                <h3 class="project-title">DSM.</h3>
-
-                <p class="project-category">Web design</p>
-              </a>
-            </li>
-
-            <li
-              class="project-item active"
-              data-filter-item
-              data-category="applications"
-            >
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img
-                    src="src/images/project-8.jpg"
-                    alt="task manager"
-                    loading="lazy"
-                  />
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-              </a>
-            </li>
-
-            <li
-              class="project-item active"
-              data-filter-item
-              data-category="web development"
-            >
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img
-                    src="src/images/project-9.png"
-                    alt="arrival"
-                    loading="lazy"
-                  />
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
-              </a>
-            </li>
+            <ProjectList
+              projectName="Mataram Immigration Office Inventory System"
+              projectCategory="Web Development"
+              imgSrc="public/images/project-imigrasi.svg"
+              imgAlt="Mataram Immigration Office Inventory System"
+            />
+            <ProjectList
+              projectName="Dotaku Mobile Apps"
+              projectCategory="Applications"
+              imgSrc="src/images/project-2.png"
+              imgAlt="Dotaku Mobile Apps"
+            />
+            <ProjectList
+              projectName="Ticketing Mobile Apps"
+              projectCategory="Applications"
+              imgSrc="src/images/project-2.png"
+              imgAlt="Ticketing Mobile Apps"
+            />
+            <ProjectList
+              projectName="KKN Final Project Video"
+              projectCategory="Others"
+              imgSrc="public/images/project-tetebatu.png"
+              imgAlt="KKN Final Project Video"
+              href="https://www.youtube.com/watch?v=Nz46U6bSxWM"
+            />
+            <ProjectList
+              projectName="Fish Market: Regression"
+              projectCategory="Data Science"
+              imgSrc="src/images/project-tetebatu.png"
+              imgAlt="Fish Market: Regression"
+            />
           </ul>
         </section>
       </article>
@@ -410,11 +322,11 @@ import TimelineLayout from "../layouts/TimelineLayout.astro";
         <BlogList
           href="#"
           imgSrc="src/images/blog-2.jpg"
-          imgAlt="scam"
-          category="Scam"
-          date="18, April 2023"
-          title="How To Fight Against Scammer"
-          desc="lorem upsumasdmams asd"
+          imgAlt="AstroJS"
+          category="Tech Stack"
+          date="11, December 2023"
+          title="AstroJS: Why This Lightweight Framework is Perfect for Your Project!"
+          desc="AstroJS is a powerful tool that helps us create websites swiftly and efficiently, much like using the right tools to construct a house."
         />
         <BlogList
           href="#"

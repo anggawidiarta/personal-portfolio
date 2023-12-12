@@ -1,5 +1,5 @@
 ---
-const { imgSrc, imgAlt, name, desc } = Astro.props;
+const { imgSrc, imgAlt, name, desc, time } = Astro.props;
 ---
 
 <li class="testimonials-item">
@@ -11,7 +11,9 @@ const { imgSrc, imgAlt, name, desc } = Astro.props;
     <h4 class="h4 testimonials-item-title" data-testimonials-title>
       {name}
     </h4>
-   
+
+    <time data-testimonials-time style="display: none;">{time}</time>
+
     <div class="testimonials-text" data-testimonials-text>
       <p>{desc}</p>
     </div>

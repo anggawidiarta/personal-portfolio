@@ -1,5 +1,5 @@
 ---
-const { projectName, projectCategory, imgSrc, imgAlt } = Astro.props;
+const { projectName, projectCategory, imgSrc, imgAlt, href } = Astro.props;
 ---
 
 <li
@@ -7,7 +7,7 @@ const { projectName, projectCategory, imgSrc, imgAlt } = Astro.props;
   data-filter-item
   data-category={projectCategory.toLowerCase()}
 >
-  <a href="#">
+  <a href={href} target="_blank">
     <figure class="project-img">
       <div class="project-item-icon-box">
         <ion-icon name="eye-outline"></ion-icon>
