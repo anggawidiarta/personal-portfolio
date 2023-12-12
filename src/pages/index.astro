@@ -39,7 +39,7 @@ import TimelineLayout from "../layouts/TimelineLayout.astro";
         - #NAVBAR
       -->
 
-      <nav class="navbar">
+      <nav class="navbar justify-center">
         <ul class="navbar-list">
           <Navbar about="About" className="navbar-link active" />
           <Navbar about="Resume" className="navbar-link " />
@@ -89,7 +89,7 @@ import TimelineLayout from "../layouts/TimelineLayout.astro";
         -->
 
         <section class="testimonials">
-          <h3 class="h3 testimonials-title">Testimonials</h3>
+          <h3 class="h3 testimonials-title font-bold">Testimonials</h3>
 
           <ul class="testimonials-list has-scrollbar">
             <TestimonialList
@@ -166,24 +166,12 @@ import TimelineLayout from "../layouts/TimelineLayout.astro";
         -->
 
         <section class="clients">
-          <h3 class="h3 clients-title">Clients</h3>
+          <h3 class="h3 clients-title font-bold">Clients</h3>
 
           <ul class="clients-list has-scrollbar">
-            <ClientList
-              href="#"
-              imgSrc="src/images/logo-2-color.png"
-              imgAlt=""
-            />
-            <ClientList
-              href="#"
-              imgSrc="src/images/logo-3-color.png"
-              imgAlt=""
-            />
-            <ClientList
-              href="#"
-              imgSrc="src/images/logo-4-color.png"
-              imgAlt=""
-            />
+            <ClientList href="#" imgSrc="logo-2-color.png" imgAlt="" />
+            <ClientList href="#" imgSrc="logo-3-color.png" imgAlt="" />
+            <ClientList href="#" imgSrc="logo-4-color.png" imgAlt="" />
           </ul>
         </section>
       </article>

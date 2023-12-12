@@ -24,7 +24,7 @@
     /* gradient */
 
     --bg-gradient-onyx: linear-gradient(to bottom right,
-            hsl(240, 1%, 25%) 3%,
+            hwb(240 25% 75%) 3%,
             hsl(0, 0%, 19%) 97%);
     --bg-gradient-jet: linear-gradient(to bottom right,
             hsla(240, 1%, 18%, 0.251) 0%,
@@ -2178,4 +2178,16 @@ textarea.form-input::-webkit-resizer {
 .special-effect:hover {
     --_p: 19%;
 
+}
+
+@media (max-width: 1249px) {
+    .round-avatar {
+        display: none;
+    }
+}
+
+@media (min-width: 1250px) {
+    .avatar-box {
+        display: none;
+    }
 }

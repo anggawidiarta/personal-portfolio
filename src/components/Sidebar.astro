@@ -2,14 +2,20 @@
 const { name, email, phone, birth, title } = Astro.props;
 import ContactList from "./ContactList.astro";
 import SocialList from "./SocialList.astro";
-
 ---
 
 <aside class="sidebar" data-sidebar>
   <div class="sidebar-info">
     <figure class="avatar-box">
-      <img src="student.png" alt="Angga Widiarta" width="80" />
+      <img src="public/boy.png" alt="Angga Widiarta" width="80" />
     </figure>
+    <div class="round-avatar">
+      <img
+        class="w-36 h-36 p-1 rounded-full ring-2 ring-gray-300 dark:ring-prussian"
+        src="public/student.png"
+        alt="Bordered avatar"
+      />
+    </div>
 
     <div class="info-content">
       <h1 class="name" title="Angga Widiarta">{name}</h1>
@@ -77,4 +83,3 @@ import SocialList from "./SocialList.astro";
     </ul>
   </div>
 </aside>
-
