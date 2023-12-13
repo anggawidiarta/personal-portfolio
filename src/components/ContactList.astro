@@ -10,6 +10,6 @@ const { href, referenceName, contactType, iconName } = Astro.props;
   <div class="contact-info">
     <p class="contact-title">{contactType}</p>
 
-    <a href={href} class="contact-link">{referenceName}</a>
+    <a href={href} class="contact-link" target="_blank">{referenceName}</a>
   </div>
 </li>

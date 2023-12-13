@@ -2,8 +2,9 @@
 const { hrefSocial, socialLogo } = Astro.props;
 ---
 
+<!-- SocialList Are Components To Sidebar -->
 <li class="social-item">
-  <a href={hrefSocial} class="social-link">
+  <a href={hrefSocial} class="social-link" target="_blank">
     <ion-icon name={socialLogo}></ion-icon>
   </a>
 </li>

@@ -12,7 +12,7 @@ import SocialList from "./SocialList.astro";
     <div class="round-avatar">
       <img
         class="w-36 h-36 p-1 rounded-full ring-2 ring-gray-300 dark:ring-prussian"
-        src="/student.png"
+        src="/angga.png"
         alt="Bordered avatar"
       />
     </div>
@@ -35,17 +35,17 @@ import SocialList from "./SocialList.astro";
 
     <ul class="contacts-list">
       <ContactList
-        iconName="calendar-outline"
+        iconName="mail-outline"
         contactType="Email"
         referenceName="anggawidiarta55@gmail.com"
-        href="#"
+        href="mailto:anggawidiarta55@gmail.com"
       />
 
       <ContactList
-        iconName="calendar-outline"
+        iconName="call-outline"
         contactType="Phone"
         referenceName="+6287765304309"
-        href="#"
+        href="https://wa.me/087765304309"
       />
 
       <!-- <li class="contact-item">
@@ -76,10 +76,23 @@ import SocialList from "./SocialList.astro";
     <div class="separator"></div>
 
     <ul class="social-list">
-      <SocialList hrefSocial="#" socialLogo="logo-facebook" />
-      <SocialList hrefSocial="#" socialLogo="logo-twitter" />
-      <SocialList hrefSocial="#" socialLogo="logo-instagram" />
-      <SocialList hrefSocial="#" socialLogo="logo-linkedin" />
+      <SocialList
+        hrefSocial="https://www.facebook.com/AnggaWidiarta18"
+        socialLogo="logo-facebook"
+      />
+      <!-- <SocialList hrefSocial="#" socialLogo="logo-twitter" /> -->
+      <SocialList
+        hrefSocial="https://www.instagram.com/anggawdyrta/"
+        socialLogo="logo-instagram"
+      />
+      <SocialList
+        hrefSocial="https://www.linkedin.com/in/anggawidiarta/"
+        socialLogo="logo-linkedin"
+      />
+      <!-- <SocialList
+        hrefSocial="#"
+        socialLogo="document-outline"
+      /> -->
     </ul>
   </div>
 </aside>
