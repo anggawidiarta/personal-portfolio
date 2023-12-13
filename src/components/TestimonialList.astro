@@ -5,7 +5,12 @@ const { imgSrc, imgAlt, name, desc, time } = Astro.props;
 <li class="testimonials-item">
   <div class="content-card" data-testimonials-item>
     <figure class="testimonials-avatar-box">
-      <img src={imgSrc} alt={imgAlt} width="60" data-testimonials-avatar />
+      <img
+        src={imgSrc}
+        alt={imgAlt}
+        style="width: 60px;"
+        data-testimonials-avatar
+      />
     </figure>
 
     <h4 class="h4 testimonials-item-title" data-testimonials-title>
