@@ -16,6 +16,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import BlogLayout from "../layouts/BlogLayout.astro";
 import SkillLayout from "../layouts/SkillLayout.astro";
 import TimelineLayout from "../layouts/TimelineLayout.astro";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 ---
 
 <BaseLayout title="Web Portfolio | Angga Widiarta">
@@ -350,6 +351,7 @@ import TimelineLayout from "../layouts/TimelineLayout.astro";
           desc=" The comparison between Client Side Rendering (CSR) and Server Side Rendering (SSR). "
         />
       </BlogLayout>
+      <SpeedInsights />
     </div>
   </main>
 </BaseLayout>
