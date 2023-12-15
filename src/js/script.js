@@ -1,6 +1,6 @@
 "use strict";
-import { injectSpeedInsights } from "@vercel/speed-insights";
-injectSpeedInsights();
+// import { injectSpeedInsights } from "@vercel/speed-insights";
+// injectSpeedInsights();
 
 /**
  * Function to toggle the 'active' class on a given element.
