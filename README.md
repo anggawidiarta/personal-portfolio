@@ -1,8 +1,7 @@
 
 <h1 align="center">
-  <br>
-<img title="portfolio"  alt="main-photo" src="public/main-logo.svg" width=300>
 
+<img title="portfolio"  alt="main-photo" src="public/main-logo.svg" width=300>
   <br>
     Personal Portfolio
   <br>
@@ -13,6 +12,8 @@
 <br>
 
 <img title="portfolio"  alt="main-photo" width=650 src="public/screencapture-personal-portfolio-nine-plum-84-vercel-app-2023-12-22-12_45_45.png">
+
+<br>
 
 ## How To Use
 
