@@ -10,7 +10,7 @@
 <h4 align="center">Explore my personal portfolio, meticulously crafted using the cutting-edge <a href='https://astro.build/' target="_blank">Astro</a>.
 
 <br>
-
+<br>
 <img title="portfolio"  alt="main-photo" width=650 src="public/screencapture-personal-portfolio-nine-plum-84-vercel-app-2023-12-22-12_45_45.png">
 
 <br>
