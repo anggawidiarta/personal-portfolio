@@ -28,7 +28,7 @@ import TimelineLayout from "../layouts/TimelineLayout.astro";
       - #SIDEBAR
     -->
 
-    <Sidebar name="Angga Widiarta" title="Web Enthusiast | Data Analyst" />
+    <Sidebar name="ANGGA WIDIARTA" title="Web Enthusiast | Data Analyst" />
 
     <!--
       - #main-content
@@ -39,7 +39,7 @@ import TimelineLayout from "../layouts/TimelineLayout.astro";
         - #NAVBAR
       -->
 
-      <nav class="navbar justify-center">
+      <nav class="justify-center navbar">
         <ul class="navbar-list">
           <Navbar about="About" className="navbar-link active" />
           <Navbar about="Resume" className="navbar-link " />
@@ -66,7 +66,11 @@ import TimelineLayout from "../layouts/TimelineLayout.astro";
         -->
 
         <section class="service">
-          <h3 class="h3 service-title font-bold">What i'm doing</h3>
+          <h3
+            class="text-2xl font-[600] tracking-wider font-fjalla h3 service-title"
+          >
+            What i'm doing
+          </h3>
 
           <ul class="service-list">
             <AboutList
@@ -101,7 +105,11 @@ import TimelineLayout from "../layouts/TimelineLayout.astro";
         -->
 
         <section class="testimonials">
-          <h3 class="h3 testimonials-title font-bold">Certifications</h3>
+          <h3
+            class="text-2xl font-[600] tracking-wider font-fjalla h3 testimonials-title"
+          >
+            Certifications
+          </h3>
 
           <ul class="testimonials-list has-scrollbar">
             <TestimonialList
@@ -176,7 +184,7 @@ import TimelineLayout from "../layouts/TimelineLayout.astro";
         -->
 
         <!-- <section class="clients">
-          <h3 class="h3 clients-title font-bold">Clients</h3>
+          <h3 class="font-bold h3 clients-title">Clients</h3>
 
           <ul class="clients-list has-scrollbar">
             <ClientList href="#" imgSrc="logo-2-color.png" imgAlt="" />
@@ -190,7 +198,7 @@ import TimelineLayout from "../layouts/TimelineLayout.astro";
 
       <article class="resume" data-page="resume">
         <header>
-          <h2 class="h2 article-title font-bold">Resume</h2>
+          <h2 class="font-bold h2 article-title">Resume</h2>
         </header>
 
         <!-- Education Resume -->
@@ -241,7 +249,7 @@ import TimelineLayout from "../layouts/TimelineLayout.astro";
 
       <article class="portfolio" data-page="portfolio">
         <header>
-          <h2 class="h2 article-title font-bold">Portfolio</h2>
+          <h2 class="font-bold h2 article-title">Portfolio</h2>
         </header>
 
         <section class="projects">

@@ -226,6 +226,7 @@ article.active {
 .h5 {
     color: var(--white-2);
     text-transform: capitalize;
+
 }
 
 .h2 {
@@ -348,7 +349,7 @@ main {
     border-radius: 20px;
 }
 
-.info-content .name {
+.info-content {
     color: var(--white-2);
     font-size: var(--fs-3);
     font-weight: var(--fw-500);
@@ -527,7 +528,7 @@ main {
 
 .about-text {
     color: var(--light-gray);
-    font-size: var(--fs-6);
+    /* font-size: var(--fs-6); */
     font-weight: var(--fw-300);
     line-height: 1.6;
 }
@@ -588,13 +589,15 @@ main {
 
 .service-item-title {
     margin-bottom: 7px;
+    @apply font-fjalla
 }
 
 .service-item-text {
     color: var(--light-gray);
-    font-size: var(--fs-6);
+    /* font-size: var(--fs-6); */
     font-weight: var(--fw-3);
     line-height: 1.6;
+    @apply font-libre max-md:text-[10px] text-[14px]
 }
 
 
@@ -641,6 +644,7 @@ main {
 
 .testimonials-item-title {
     margin-bottom: 7px;
+    @apply font-fjalla font-thin
 }
 
 .testimonials-text {
@@ -1551,6 +1555,7 @@ textarea.form-input::-webkit-resizer {
 
     .about-text {
         margin-bottom: 40px;
+
     }
 
     /* service */
