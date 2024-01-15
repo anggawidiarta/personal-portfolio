@@ -17,9 +17,14 @@ const { imgSrc, imgAlt, category, date, title, desc, href } = Astro.props;
         <time datetime={date}>{date}</time>
       </div>
 
-      <h3 class="h3 blog-item-title">{title}</h3>
+      <h3
+        class="font-semibold h3 blog-item-title font-helvetica line-clamp-2"
+        title={title}
+      >
+        {title}
+      </h3>
 
-      <p class="blog-text">
+      <p class="font-normal blog-text font-helvetica line-clamp-3" title={desc}>
         {desc}
       </p>
     </div>

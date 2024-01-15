@@ -3,5 +3,7 @@ const { title, active } = Astro.props;
 ---
 
 <li class="filter-item">
-  <button class={active || ""} data-filter-btn>{title}</button>
+  <button class={`${active} font-helvetica tracking-wide || ""`} data-filter-btn
+    >{title}</button
+  >
 </li>
