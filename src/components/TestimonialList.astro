@@ -13,13 +13,16 @@ const { imgSrc, imgAlt, name, desc, time, href } = Astro.props;
       />
     </figure>
 
-    <h4 class="h4 testimonials-item-title font-semibold" data-testimonials-title>
+    <h4
+      class="font-semibold h4 testimonials-item-title"
+      data-testimonials-title
+    >
       <a href={href} target="_blank">{name}</a>
     </h4>
 
     <time data-testimonials-time style="display: none;">{time}</time>
 
-    <div class="testimonials-text" data-testimonials-text>
+    <div class="font-thin testimonials-text font-fjalla" data-testimonials-text>
       <p>{desc}</p>
     </div>
   </div>
