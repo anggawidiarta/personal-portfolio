@@ -28,7 +28,7 @@
     /* solid */
 
     --jet: hsl(0, 0%, 22%);
-    --onyx: hsl(240, 1%, 17%);
+    --onyx: #2b2b2c;
     --eerie-black-1: hsl(240, 2%, 13%);
     --eerie-black-2: hsl(240, 2%, 12%);
     --smoky-black: hsl(0, 0%, 7%);
@@ -360,8 +360,7 @@ main {
 .info-content .title {
     color: var(--white-1);
     background: var(--onyx);
-    font-size: var(--fs-8);
-    font-weight: var(--fw-300);
+
     width: max-content;
     padding: 3px 12px;
     border-radius: 8px;
@@ -528,8 +527,6 @@ main {
 
 .about-text {
     color: var(--light-gray);
-    /* font-size: var(--fs-6); */
-    font-weight: var(--fw-300);
     line-height: 1.6;
 }
 
@@ -589,15 +586,12 @@ main {
 
 .service-item-title {
     margin-bottom: 7px;
-    @apply font-fjalla
+    @apply font-fjalla font-normal
 }
 
 .service-item-text {
     color: var(--light-gray);
-    /* font-size: var(--fs-6); */
-    font-weight: var(--fw-3);
     line-height: 1.6;
-    @apply font-libre max-md:text-[10px] text-[14px]
 }
 
 
@@ -644,13 +638,13 @@ main {
 
 .testimonials-item-title {
     margin-bottom: 7px;
-    @apply font-fjalla font-thin
+    @apply font-fjalla font-normal
 }
 
 .testimonials-text {
     color: var(--light-gray);
     font-size: var(--fs-6);
-    font-weight: var(--fw-300);
+    /* font-weight: var(--fw-300); */
     line-height: 1.6;
     display: -webkit-box;
     line-clamp: 4;
@@ -899,7 +893,7 @@ main {
 
 .timeline-text {
     color: var(--light-gray);
-    font-weight: var(--fw-300);
+    /* font-weight: var(--fw-300); */
     line-height: 1.6;
 }
 
@@ -1938,6 +1932,7 @@ textarea.form-input::-webkit-resizer {
     .navbar-list {
         gap: 30px;
         padding: 0 20px;
+
     }
 
     .navbar-link {
