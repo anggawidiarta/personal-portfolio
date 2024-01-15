@@ -3,7 +3,11 @@ const { title } = Astro.props;
 ---
 
 <section class="skill">
-  <h3 class="h3 skills-title font-bold">{title || "My Skills"}</h3>
+  <h3
+    class="text-2xl font-[600] tracking-wider font-fjalla service-title text-[rgb(250,250,250)]"
+  >
+    {title || "My Skills"}
+  </h3>
 
   <ul class="skills-list content-card">
     <slot />
