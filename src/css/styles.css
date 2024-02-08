@@ -72,7 +72,8 @@
     --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.25);
     --shadow-4: 0 25px 50px hsla(0, 0%, 0%, 0.15);
     --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.25);
-
+    --shadow-primary: 20px 0px 100px -10px hwb(255 0% 44%);
+    --shadow-aside: -20px 0px 100px -10px rgb(36, 0, 143);
     /**
      * transition
      */
@@ -159,10 +160,10 @@ body {
 .sidebar,
 article {
     background: var(--eerie-black-2);
-    border: 1px solid var(--jet);
+    border: 1px solid #3500d3;
     border-radius: 20px;
     padding: 15px;
-    box-shadow: var(--shadow-1);
+    /* box-shadow: var(--shadow-primary); */
     z-index: 1;
 }
 
@@ -206,6 +207,8 @@ article {
 }
 
 article.active {
+    box-shadow: var(--shadow-primary);
+
     display: block;
     animation: fade 0.5s ease backwards;
 }
@@ -330,10 +333,12 @@ main {
     max-height: 112px;
     overflow: hidden;
     transition: var(--transition-2);
+    box-shadow: var(--shadow-aside);
 }
 
 .sidebar.active {
     max-height: 405px;
+
 }
 
 .sidebar-info {
@@ -484,7 +489,7 @@ main {
     width: 100%;
     background: hsla(240, 1%, 17%, 0.75);
     backdrop-filter: blur(10px);
-    border: 1px solid var(--jet);
+    border: 1px solid #3500d3;
     border-radius: 12px 12px 0 0;
     box-shadow: var(--shadow-2);
     z-index: 5;
@@ -2075,6 +2080,7 @@ textarea.form-input::-webkit-resizer {
         margin-bottom: 0;
         padding-top: 60px;
         z-index: 1;
+        box-shadow: var(--shadow-aside);
     }
 
     .sidebar-info {
