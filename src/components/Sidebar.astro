@@ -12,7 +12,7 @@ import "animate.css";
     </figure>
     <div class="round-avatar">
       <img
-        class="p-1 rounded-full w-36 h-36 ring-2 ring-gray-300 dark:ring-[#fdca65]"
+        class="p-1 rounded-full w-36 h-36 ring-2 ring-gray-300 dark:ring-[rgba(53,0,211,1)]"
         src="/angga.png"
         alt="Bordered avatar"
       />
@@ -20,13 +20,15 @@ import "animate.css";
 
     <div class="info-content">
       <h1
-        class="mb-[10px] tracking-wide font-fjalla name tracking-in-expand text-[#3500D3] shadow-[0px_0px_25px_0px_#1a0061]"
+        class="mb-3 tracking-normal font-fjalla name tracking-in-expand text-[#F4F4F4] drop-shadow-[0_1.2px_1.2px_rgba(53,0,211,0.8)]"
         title="Angga Widiarta"
       >
         {name}
       </h1>
 
-      <p class="text-[11px] font-medium font-helvetica title">{title}</p>
+      <p class="text-xs font-medium font-helvetica title">
+        {title}
+      </p>
     </div>
 
     <button class="info_more-btn font-helvetica" data-sidebar-btn>

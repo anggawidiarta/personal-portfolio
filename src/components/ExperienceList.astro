@@ -3,11 +3,13 @@ const { name, timeline, desc } = Astro.props;
 ---
 
 <li class="timeline-item">
-  <h4 class="font-bold tracking-wide font-helvetica h4 timeline-item-title">{name}</h4>
+  <h4 class="font-bold tracking-wide font-helvetica h4 timeline-item-title">
+    {name}
+  </h4>
 
   <span>{timeline}</span>
 
-  <p class="font-normal timeline-text font-helvetica">
+  <p class="font-normal timeline-text font-helvetica ">
     {desc}
   </p>
 </li>
