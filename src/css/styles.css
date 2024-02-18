@@ -269,20 +269,19 @@ article.active {
     border-radius: 3px;
 }
 
+/* .has-scrollbar{
+    s
+} */
+
 .has-scrollbar::-webkit-scrollbar {
     width: 5px;
     /* for vertical scrollbar */
     height: 5px;
+
     /* for horizontal scrollbar */
 }
 
-.has-scrollbar-mozilla {
-    /* scrollbar-width: 5px;
-    background: var(--onyx);
-    border-radius: 5px;
-    color: aquamarine; */
-    /* scrollbar-he */
-}
+
 
 .has-scrollbar::-webkit-scrollbar-track {
     background: var(--onyx);
